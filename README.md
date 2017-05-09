@@ -1,0 +1,1 @@
+# subspec-error-example
