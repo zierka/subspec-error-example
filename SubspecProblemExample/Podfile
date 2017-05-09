@@ -1,0 +1,10 @@
+platform :ios, '10.0'
+use_frameworks!
+
+target 'SubspecProblemExample' do
+  pod 'MyFramework', :path => "../MyFramework"
+end
+
+target 'todayWidget' do
+  pod 'MyFramework/Extension', :path => "../MyFramework"
+end

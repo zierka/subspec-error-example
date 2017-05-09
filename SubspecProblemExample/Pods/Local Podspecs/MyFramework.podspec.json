@@ -1,0 +1,37 @@
+{
+  "name": "MyFramework",
+  "version": "0.1.0",
+  "summary": "Dummy Framework",
+  "homepage": "https://github.com/zierka",
+  "license": "MIT",
+  "authors": {
+    "Zier Erik": "erik.interwebz@gmail.com"
+  },
+  "source": {
+    "git": "git@github.com:zierka/subspec-error-example.git",
+    "tag": "0.1.0"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "10.0"
+  },
+  "default_subspecs": "App",
+  "subspecs": [
+    {
+      "name": "App",
+      "source_files": [
+        "App/**/*.{swift}"
+      ]
+    },
+    {
+      "name": "Extension",
+      "source_files": [
+        "App/CoreClass.swift",
+        "Extension/**/*.{swift}"
+      ],
+      "exclude_files": [
+        "App/AppClass.swift"
+      ]
+    }
+  ]
+}
